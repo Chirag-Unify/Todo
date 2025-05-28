@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.todo-section{
+    flex: 1 1 320px;
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: 24px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #3a506b;
+    margin-top: 0;
+}
+
+#todo-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bfc9d1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    resize: none;
+}
+
+#todo-form button {
+    background: #5f76e8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#todo-form button:hover {
+    background: #4053b5;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    background: #e3eafc;
+    margin-bottom: 8px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.2s;
+    position: relative;
+}
+
+#todo-list li.completed {
+    text-decoration: line-through;
+    color: #8a9ba8;
+    background: #d1e7dd;
+}
+
+#todo-list input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: #5f76e8;
+    width: 18px;
+    height: 18px;
+}
+
+.todo-actions button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: color 0.2s;
+}
+
+.todo-actions button:hover {
+    color: #c0392b;
+}
